@@ -1,0 +1,23 @@
+.btn {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  display: inline-block;
+  line-height: 1.5;
+  padding-block: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  position: relative;
+  white-space: nowrap;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $text-color;
+  }
+
+  &--dark {
+    border: 0.1rem solid white;
+  }
+}
