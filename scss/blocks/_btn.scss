@@ -5,11 +5,10 @@
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   display: inline-block;
-  line-height: 1.5;
-  padding-block: 0.5rem;
+  font-weight: 500;
+  line-height: 1.8;
   padding: 0.8rem 1.6rem;
   position: relative;
-  white-space: nowrap;
   transition: all 0.3s;
 
   &:hover {

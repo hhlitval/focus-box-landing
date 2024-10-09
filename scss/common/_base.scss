@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap");
 
-// * {
-//   border: 1px solid rgb(197, 101, 101);
-// }
-
-html,
-body {
+html {
   font-size: 62.5%;
-  font-family: $font-main;
-  color: $text-color;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
   background: $primary-bg-color;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: $font-main;
+  line-height: 1;
+  color: $text-color;
 }
 
 .container {
   max-width: 131rem;
-  padding: 0 1.5rem;
+  padding: 0 4.8rem;
   margin: 0 auto;
 
   &--small {

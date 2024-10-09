@@ -4,5 +4,7 @@
   left: 0;
   right: 0;
   height: 10rem;
-  backdrop-filter: blur(1rem);
+  background-color: transparent;
+  backdrop-filter: blur(1.8rem);
+  z-index: 1;
 }
