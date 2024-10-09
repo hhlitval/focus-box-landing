@@ -3,7 +3,7 @@
   color: rgba(255, 255, 255, 0.9);
   background-color: transparent;
   border: 0.1rem solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   display: inline-block;
   font-weight: 500;
   line-height: 1.8;
@@ -18,5 +18,10 @@
 
   &--dark {
     border: 0.1rem solid white;
+  }
+
+  &--light {
+    background-color: #fff;
+    color: $primary-bg-color;
   }
 }

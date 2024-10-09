@@ -1,0 +1,15 @@
+.features {
+  padding-bottom: 12rem;
+  &__row {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__item {
+    height: 36rem;
+    background-color: $accent-color;
+    border-radius: 1.6rem;
+    overflow: hidden;
+  }
+}

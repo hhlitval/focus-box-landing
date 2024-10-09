@@ -207,7 +207,8 @@ body {
           flex-direction: column;
   place-items: center;
   text-align: center;
-  padding: 24rem 4.8rem;
+  margin-top: 10rem;
+  padding: 16rem 4.8rem 12rem;
 }
 .hero__title {
   font-size: 9.6rem;
@@ -224,6 +225,53 @@ body {
   margin-bottom: 5rem;
 }
 
+.product {
+  padding-bottom: 12rem;
+}
+.product__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.product__col {
+  height: 40rem;
+  background-color: #1e1e24;
+  border-radius: 1.6rem;
+}
+
+.features {
+  padding-bottom: 12rem;
+}
+.features__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+}
+.features__item {
+  height: 36rem;
+  background-color: #1e1e24;
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.section-content {
+  text-align: center;
+}
+.section-content__heading {
+  font-size: 6.8rem;
+  margin-bottom: 4.8rem;
+}
+.section-content__subheading {
+  font-size: 2rem;
+  color: #b2b2b2;
+  margin-bottom: 4.2rem;
+}
+
 .btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -231,7 +279,7 @@ body {
   color: rgba(255, 255, 255, 0.9);
   background-color: transparent;
   border: 0.1rem solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   display: inline-block;
   font-weight: 500;
   line-height: 1.8;
@@ -246,6 +294,10 @@ body {
 }
 .btn--dark {
   border: 0.1rem solid white;
+}
+.btn--light {
+  background-color: #fff;
+  color: #08090a;
 }
 
 .cta {

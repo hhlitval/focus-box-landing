@@ -1,0 +1,14 @@
+.product {
+  padding-bottom: 12rem;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  &__col {
+    height: 40rem;
+    background-color: $accent-color;
+    border-radius: 1.6rem;
+  }
+}
