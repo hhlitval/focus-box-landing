@@ -111,7 +111,47 @@ legend {
 
 html,
 body {
+  font-size: 16px;
   font-family: "Inter", sans-serif;
-  color: #2b2b2b;
-  background: #ffffff;
+  color: #ffffff;
+  background: #08090a;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3rem;
+  position: relative;
+}
+.nav__logo {
+  font-size: 5rem;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav__item {
+  padding: 0 1rem;
 }/*# sourceMappingURL=main.css.map */
