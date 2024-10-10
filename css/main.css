@@ -191,7 +191,7 @@ body {
   display: flex;
   place-items: center;
   min-height: 80vh;
-  background-image: url("/img/hero-bg-2.svg");
+  background-image: url("/img/hero-bg.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

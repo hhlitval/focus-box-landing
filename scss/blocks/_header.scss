@@ -5,6 +5,8 @@
   right: 0;
   height: 10rem;
   background-color: transparent;
+  // background-color: $primary-bg-color;
+  // border-bottom: 0.05rem solid $accent-color;
   backdrop-filter: blur(1.8rem);
   z-index: 1;
 }

@@ -7,8 +7,7 @@
 	.st0{fill:url(#SVGID_1_);}
 </style>
 <g id="Layer_1-2">
-	
-		<radialGradient id="SVGID_1_" cx="687.7" cy="767.48" r="684.23" gradientTransform="matrix(1 0 0 -1 0 768)" gradientUnits="userSpaceOnUse">
+	<radialGradient id="SVGID_1_" cx="687.7" cy="0.52" r="941.9678" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#1E1E24"/>
 		<stop  offset="0.23" style="stop-color:#141519"/>
 		<stop  offset="0.6" style="stop-color:#0B0C0D"/>
