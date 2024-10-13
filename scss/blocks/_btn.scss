@@ -19,6 +19,14 @@
 
   &--accent {
     background-color: $accent-color;
+    color: $primary-bg-color;
+    &:hover {
+      border: 0.1rem solid $text-color;
+    }
+  }
+
+  &--glowing {
+    background-color: $accent-color;
     box-shadow: 0 0 1rem $accent-color;
     color: $primary-bg-color;
   }
