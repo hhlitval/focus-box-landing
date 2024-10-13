@@ -1,6 +1,6 @@
 .btn {
   align-items: center;
-  color: rgba(255, 255, 255, 0.9);
+  color: $btn-text-color;
   background-color: transparent;
   border: 0.1rem solid transparent;
   border-radius: 0.6rem;
@@ -9,19 +9,21 @@
   line-height: 1.8;
   padding: 0.8rem 1.6rem;
   position: relative;
-  transition: all 0.3s;
+  transition: all 0.4s;
 
   &:hover {
-    background-color: $accent-color;
+    background-color: $secondary-bg-color;
     color: $text-color;
+    box-shadow: none;
   }
 
-  &--dark {
-    border: 0.1rem solid white;
-  }
-
-  &--light {
-    background-color: #fff;
+  &--accent {
+    background-color: $accent-color;
+    box-shadow: 0 0 1rem $accent-color;
     color: $primary-bg-color;
+  }
+
+  &--download {
+    border: 0.1rem solid $text-color;
   }
 }
