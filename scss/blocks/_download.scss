@@ -18,23 +18,23 @@
     &::after {
       position: absolute;
       content: "";
-      filter: blur(100px);
-      width: 200px;
-      height: 200px;
-      opacity: 0.3;
+      filter: blur(10rem);
+      width: 400px;
+      height: 400px;
+      opacity: 0.2;
       border-radius: 50%;
     }
 
     &::before {
       top: 50px;
-      left: -200px;
-      background: linear-gradient(90deg, #d1345b 50.02%, #1ccad8 98.88%);
+      left: 150px;
+      background: #d1345b;
     }
 
     &::after {
-      top: -300px;
-      right: -50px;
-      background: linear-gradient(90deg, #1ccad8 50.02%, #d1345b 98.88%);
+      top: -400px;
+      right: 100px;
+      background: #1ccad8;
     }
   }
 
