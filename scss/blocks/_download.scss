@@ -1,0 +1,40 @@
+.download {
+  background: $secondary-bg-color;
+  padding: 9.6rem 0;
+  overflow: hidden;
+
+  &-heading {
+    font-size: 5rem !important;
+    font-weight: 500;
+  }
+
+  &-btns {
+    position: relative;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      filter: blur(100px);
+      width: 200px;
+      height: 200px;
+      opacity: 0.3;
+      border-radius: 50%;
+    }
+
+    &::before {
+      top: 50px;
+      left: -200px;
+      background: linear-gradient(194.29deg, #d1345b 50.02%, #586ba4 98.88%);
+    }
+
+    &::after {
+      top: -300px;
+      right: -50px;
+      background: linear-gradient(194.29deg, #1ccad8 50.02%, #d1345b 98.88%);
+    }
+  }
+}
