@@ -1,2 +1,53 @@
 .footer {
+  padding: 9.6rem 0;
+  font-size: 1.4rem;
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &-col {
+    display: flex;
+    flex-flow: column;
+
+    &__logo {
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+
+    &__copyright {
+      color: $text-color-muted;
+    }
+
+    &__title {
+      font-weight: 500;
+      margin-bottom: 2.4rem;
+    }
+
+    &__link {
+      margin-bottom: 1.2rem;
+      line-height: 2rem;
+      color: $text-color-muted;
+      text-decoration: none;
+      transition: color 0.3s;
+      align-self: flex-start;
+      cursor: pointer;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+
+  &-social-links {
+    display: flex;
+    gap: 12px;
+
+    svg:hover {
+      fill: $text-color;
+    }
+  }
 }
