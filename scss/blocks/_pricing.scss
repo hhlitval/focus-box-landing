@@ -22,9 +22,24 @@
     }
 
     &--recommended {
+      position: relative;
       border: none;
       background: $secondary-bg-color;
-      box-shadow: 0px 0px 25px $secondary-bg-color;
+      // box-shadow: 0px 0px 25px $secondary-bg-color;
+
+      &::before {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: inline-block;
+        content: "Most Popular";
+        font-size: 14px;
+        color: $primary-bg-color;
+        background-color: $accent-color;
+        border: 1px solid hsl(0 0% 86%);
+        border-radius: 0.6rem;
+        padding: 0.3rem 0.8rem;
+      }
     }
 
     &__title {
@@ -38,7 +53,6 @@
       font-size: 4.8rem;
       line-height: 1;
       font-weight: 600;
-      color: rgba(255, 255, 255, 1);
     }
 
     &__list {
@@ -48,7 +62,6 @@
       grid-row-gap: 0.75rem;
       row-gap: 1.2rem;
       line-height: 2rem;
-      color: rgba(255, 255, 255, 1);
 
       &-item {
         display: flex;

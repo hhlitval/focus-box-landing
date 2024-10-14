@@ -285,10 +285,22 @@ body {
   justify-self: end;
 }
 .pricing-card--recommended {
+  position: relative;
   border: none;
   background: #1e1e24;
-  -webkit-box-shadow: 0px 0px 25px #1e1e24;
-          box-shadow: 0px 0px 25px #1e1e24;
+}
+.pricing-card--recommended::before {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: inline-block;
+  content: "Most Popular";
+  font-size: 14px;
+  color: #08090a;
+  background-color: #fff;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 0.6rem;
+  padding: 0.3rem 0.8rem;
 }
 .pricing-card__title {
   font-size: 1.4rem;
@@ -300,7 +312,6 @@ body {
   font-size: 4.8rem;
   line-height: 1;
   font-weight: 600;
-  color: rgb(255, 255, 255);
 }
 .pricing-card__list {
   margin-top: 4rem;
@@ -314,7 +325,6 @@ body {
   grid-row-gap: 0.75rem;
   row-gap: 1.2rem;
   line-height: 2rem;
-  color: rgb(255, 255, 255);
 }
 .pricing-card__list-item {
   display: -webkit-box;
