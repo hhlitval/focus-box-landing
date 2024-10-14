@@ -387,12 +387,28 @@ body {
 .download-btns::before {
   top: 50px;
   left: -200px;
-  background: linear-gradient(194.29deg, #d1345b 50.02%, #586ba4 98.88%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50.02%, #d1345b), color-stop(98.88%, #1ccad8));
+  background: linear-gradient(90deg, #d1345b 50.02%, #1ccad8 98.88%);
 }
 .download-btns::after {
   top: -300px;
   right: -50px;
-  background: linear-gradient(194.29deg, #1ccad8 50.02%, #d1345b 98.88%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50.02%, #1ccad8), color-stop(98.88%, #d1345b));
+  background: linear-gradient(90deg, #1ccad8 50.02%, #d1345b 98.88%);
+}
+.download__btn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding: 0.8rem 1.6rem;
+  line-height: 1.8 !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
 }
 
 .section-content {
@@ -412,7 +428,7 @@ body {
 .section-content__subheading {
   font-size: 2rem;
   color: #b2b2b2;
-  margin-bottom: 4.2rem;
+  margin-bottom: 4.8rem;
   line-height: 1.5;
 }
 
@@ -429,6 +445,12 @@ body {
   line-height: 1.8;
   padding: 0.8rem 1.6rem;
   position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn svg {
+  margin-right: 0.6rem;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -444,6 +466,9 @@ body {
 }
 .btn--accent:hover {
   border: 0.1rem solid #fff;
+}
+.btn--accent:hover svg {
+  fill: #fff;
 }
 .btn--glowing {
   background-color: #fff;

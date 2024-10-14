@@ -28,13 +28,22 @@
     &::before {
       top: 50px;
       left: -200px;
-      background: linear-gradient(194.29deg, #d1345b 50.02%, #586ba4 98.88%);
+      background: linear-gradient(90deg, #d1345b 50.02%, #1ccad8 98.88%);
     }
 
     &::after {
       top: -300px;
       right: -50px;
-      background: linear-gradient(194.29deg, #1ccad8 50.02%, #d1345b 98.88%);
+      background: linear-gradient(90deg, #1ccad8 50.02%, #d1345b 98.88%);
     }
+  }
+
+  &__btn {
+    display: flex !important;
+    padding: 0.8rem 1.6rem;
+    line-height: 1.8 !important;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
   }
 }

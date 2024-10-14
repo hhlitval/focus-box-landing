@@ -9,7 +9,12 @@
   line-height: 1.8;
   padding: 0.8rem 1.6rem;
   position: relative;
+  cursor: pointer;
   transition: all 0.4s;
+  svg {
+    margin-right: 0.6rem;
+    transition: all 0.4s;
+  }
 
   &:hover {
     background-color: $secondary-bg-color;
@@ -20,8 +25,12 @@
   &--accent {
     background-color: $accent-color;
     color: $primary-bg-color;
+
     &:hover {
       border: 0.1rem solid $text-color;
+      svg {
+        fill: $accent-color;
+      }
     }
   }
 
