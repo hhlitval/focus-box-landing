@@ -518,13 +518,16 @@ body {
 .section-content__heading--xs {
   font-size: 5rem;
   font-weight: 500;
-  margin-bottom: clamp(1.6rem, 0.437rem + 3.64vw, 4.8rem);
+  margin-bottom: clamp(1.6rem, 1.1632rem + 1.36vw, 2.8rem);
 }
 .section-content__subheading {
   font-size: clamp(1.6rem, 1.4544rem + 0.45vw, 2rem);
   color: #b2b2b2;
   margin-bottom: clamp(4.4rem, 2.8rem + 5vw, 8.8rem);
   line-height: 1.5;
+}
+.section-content__subheading--xs {
+  margin-bottom: clamp(4.4rem, 4.182rem + 0.68vw, 5rem);
 }
 @media (width <= 768px) {
   .section-content {
