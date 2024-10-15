@@ -15,15 +15,6 @@ body {
   color: $text-color;
 }
 
-.container {
-  max-width: 131rem;
-  padding: 0 4.8rem;
-  margin: 0 auto;
-
-  &--small {
-    max-width: 110rem;
-  }
+.hidden {
+  display: none;
 }
-
-// .section-title {
-// }

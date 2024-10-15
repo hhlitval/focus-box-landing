@@ -1,6 +1,7 @@
 @import "common/reset";
 @import "common/vars";
 @import "common/base";
+@import "common/mixin";
 
 @import "blocks/header";
 @import "blocks/nav";
@@ -11,6 +12,7 @@
 @import "blocks/download";
 @import "blocks/footer";
 
+@import "blocks/container";
 @import "blocks/section-content";
 @import "blocks/btn";
 @import "blocks/cta";

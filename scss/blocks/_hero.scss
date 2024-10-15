@@ -15,10 +15,14 @@
     text-align: center;
     margin-top: 10rem;
     padding: 16rem 4.8rem 12rem;
+
+    @include small-device() {
+      padding: 14rem 0;
+    }
   }
 
   &__title {
-    font-size: 9.6rem;
+    font-size: clamp(5.2rem, 3.6rem + 5vw, 9.6rem);
     font-weight: 500;
     letter-spacing: -0.01rem;
     text-wrap: balance;

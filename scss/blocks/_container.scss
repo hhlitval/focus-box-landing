@@ -1,0 +1,14 @@
+.container {
+  max-width: 128rem;
+  padding: 0 4.8rem;
+  // margin: 0 auto;
+  margin-inline: auto;
+
+  @include small-device() {
+    padding: 0 2rem;
+  }
+
+  &--small {
+    max-width: 110rem;
+  }
+}
