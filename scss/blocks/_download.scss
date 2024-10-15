@@ -1,18 +1,18 @@
 .download {
   background: $secondary-bg-color;
-  padding: 9.6rem 0;
+  padding-block: clamp(10rem, 9.272rem + 2.27vw, 12rem);
   overflow: hidden;
-
-  &-heading {
-    font-size: 5rem !important;
-    font-weight: 500;
-  }
 
   &-btns {
     position: relative;
     display: flex;
     column-gap: 2rem;
     justify-content: center;
+
+    @include mobile() {
+      flex-wrap: wrap;
+      row-gap: 2rem;
+    }
 
     &::before,
     &::after {

@@ -183,7 +183,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   place-items: center;
-  min-height: 80vh;
   background-image: url("/img/hero-bg.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -201,15 +200,10 @@ body {
   place-items: center;
   text-align: center;
   margin-top: 10rem;
-  padding: 16rem 4.8rem 12rem;
-}
-@media (width <= 768px) {
-  .hero__content {
-    padding: 14rem 0;
-  }
+  padding-block: clamp(10rem, 7.82rem + 6.82vw, 16rem);
 }
 .hero__title {
-  font-size: clamp(5.2rem, 3.6rem + 5vw, 9.6rem);
+  font-size: clamp(4rem, 1.227rem + 6.36vw, 9.6rem);
   font-weight: 500;
   letter-spacing: -0.01rem;
   text-wrap: balance;
@@ -217,14 +211,14 @@ body {
 }
 .hero__subtitle {
   color: #b2b2b2;
-  font-size: 2.4rem;
+  font-size: clamp(2rem, 1.8544rem + 0.45vw, 2.4rem);
   letter-spacing: -0.01em;
   line-height: 1.5;
-  margin-bottom: 5rem;
+  margin-bottom: clamp(3.6rem, 3.0912rem + 1.59vw, 5rem);
 }
 
 .product {
-  padding-bottom: 12rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .product__grid {
   display: grid;
@@ -238,7 +232,7 @@ body {
 }
 
 .features {
-  padding: 9.6rem 0;
+  padding-block: clamp(10rem, 9.272rem + 2.27vw, 12rem);
   position: relative;
 }
 .features__row {
@@ -249,7 +243,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 5rem;
+  gap: clamp(3rem, 2.23rem + 2.27vw, 5rem);
 }
 .features__item {
   height: 36rem;
@@ -259,15 +253,21 @@ body {
 }
 
 .pricing {
-  padding-bottom: 12rem;
+  padding-bottom: clamp(10rem, 9.272rem + 2.27vw, 12rem);
 }
 .pricing-cards {
   display: grid;
+  max-width: 110rem;
   grid-template-columns: repeat(auto-fill, 320px);
   gap: 7.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (width <= 768px) {
+  .pricing-cards {
+    gap: clamp(5rem, 4.2rem + 2.5vw, 7.2rem);
+  }
 }
 .pricing-card {
   height: 100%;
@@ -276,7 +276,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 3rem;
-  max-width: 320px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -311,7 +310,7 @@ body {
   text-transform: uppercase;
 }
 .pricing-card__price {
-  font-size: 4.8rem;
+  font-size: clamp(3rem, 2.346rem + 2.05vw, 4.8rem);
   line-height: 1;
   font-weight: 600;
 }
@@ -357,12 +356,8 @@ body {
 
 .download {
   background: #1e1e24;
-  padding: 9.6rem 0;
+  padding-block: clamp(10rem, 9.272rem + 2.27vw, 12rem);
   overflow: hidden;
-}
-.download-heading {
-  font-size: 5rem !important;
-  font-weight: 500;
 }
 .download-btns {
   position: relative;
@@ -375,6 +370,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (width <= 470px) {
+  .download-btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 2rem;
+  }
 }
 .download-btns::before, .download-btns::after {
   position: absolute;
@@ -467,16 +469,21 @@ body {
 
 .container {
   max-width: 128rem;
-  padding: 0 4.8rem;
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
   margin-inline: auto;
 }
 @media (width <= 768px) {
   .container {
-    padding: 0 2rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
 }
-.container--small {
-  max-width: 110rem;
+@media (width <= 470px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .section-content {
@@ -487,7 +494,7 @@ body {
   text-wrap: balance;
 }
 .section-content__heading {
-  font-size: 6.8rem;
+  font-size: clamp(3.6rem, 2.4368rem + 3.64vw, 6.8rem);
   margin-bottom: 4.8rem;
   line-height: 1.2;
   font-weight: 500;
@@ -495,10 +502,15 @@ body {
 .section-content__heading--small {
   font-size: 5.6rem;
 }
+.section-content__heading--xs {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: clamp(1.6rem, 0.437rem + 3.64vw, 4.8rem);
+}
 .section-content__subheading {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1.4544rem + 0.45vw, 2rem);
   color: #b2b2b2;
-  margin-bottom: 8.8rem;
+  margin-bottom: clamp(4.4rem, 2.8rem + 5vw, 8.8rem);
   line-height: 1.5;
 }
 @media (width <= 768px) {

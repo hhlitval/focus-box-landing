@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   place-items: center;
-  min-height: 80vh;
+  // min-height: 80vh;
   background-image: url("/img/hero-bg.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,15 +14,15 @@
     place-items: center;
     text-align: center;
     margin-top: 10rem;
-    padding: 16rem 4.8rem 12rem;
+    padding-block: clamp(10rem, 7.82rem + 6.82vw, 16rem);
 
-    @include small-device() {
-      padding: 14rem 0;
-    }
+    // @include small-device() {
+    //   padding-block: 14rem;
+    // }
   }
 
   &__title {
-    font-size: clamp(5.2rem, 3.6rem + 5vw, 9.6rem);
+    font-size: clamp(4rem, 1.227rem + 6.36vw, 9.6rem);
     font-weight: 500;
     letter-spacing: -0.01rem;
     text-wrap: balance;
@@ -31,9 +31,9 @@
 
   &__subtitle {
     color: $text-color-muted;
-    font-size: 2.4rem;
+    font-size: clamp(2rem, 1.8544rem + 0.45vw, 2.4rem);
     letter-spacing: -0.01em;
     line-height: 1.5;
-    margin-bottom: 5rem;
+    margin-bottom: clamp(3.6rem, 3.0912rem + 1.59vw, 5rem);
   }
 }

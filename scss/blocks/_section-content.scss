@@ -6,7 +6,7 @@
   text-wrap: balance;
 
   &__heading {
-    font-size: 6.8rem;
+    font-size: clamp(3.6rem, 2.4368rem + 3.64vw, 6.8rem);
     margin-bottom: 4.8rem;
     line-height: 1.2;
     font-weight: 500;
@@ -14,11 +14,17 @@
     &--small {
       font-size: 5.6rem;
     }
+
+    &--xs {
+      font-size: 5rem;
+      font-weight: 500;
+      margin-bottom: clamp(1.6rem, 0.437rem + 3.64vw, 4.8rem);
+    }
   }
   &__subheading {
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 1.4544rem + 0.45vw, 2rem);
     color: $text-color-muted;
-    margin-bottom: 8.8rem;
+    margin-bottom: clamp(4.4rem, 2.8rem + 5vw, 8.8rem);
     line-height: 1.5;
   }
 
