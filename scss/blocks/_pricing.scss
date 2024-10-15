@@ -1,33 +1,31 @@
 .pricing {
   padding-bottom: clamp(10rem, 9.272rem + 2.27vw, 12rem);
   &-cards {
-    display: grid;
-    max-width: 110rem;
-    grid-template-columns: repeat(auto-fill, 320px);
-    gap: 7.2rem;
+    display: flex;
     justify-content: center;
+    gap: 7.2rem;
+    flex-wrap: wrap;
+
     @include small-device() {
       gap: clamp(5rem, 4.2rem + 2.5vw, 7.2rem);
     }
   }
 
   &-card {
+    display: flex;
     height: 100%;
     border-radius: 1.6rem;
-    display: flex;
-    padding: 3rem;
     flex-direction: column;
     padding: 2.4rem;
 
-    &:nth-child(1) {
-      justify-self: end;
+    @include mobile() {
+      padding: 2rem;
     }
 
     &--recommended {
       position: relative;
       border: none;
       background: $secondary-bg-color;
-      // box-shadow: 0px 0px 25px $secondary-bg-color;
 
       &::before {
         position: absolute;
