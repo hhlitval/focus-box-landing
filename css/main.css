@@ -417,14 +417,23 @@ body {
 }
 
 .footer {
-  padding: 9.6rem 0;
-  font-size: 1.4rem;
+  padding-block: clamp(8.8rem, 7.637rem + 3.64vw, 12rem);
+  font-size: 1.6rem;
 }
 .footer-content {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   width: 100%;
   margin: 0 auto;
+}
+@media (width <= 974px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 2.4rem;
+  }
 }
 .footer-col {
   display: -webkit-box;
@@ -436,11 +445,12 @@ body {
           flex-flow: column;
 }
 .footer-col__logo {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 2.4rem;
 }
 .footer-col__copyright {
   color: #b2b2b2;
+  line-height: 1.5;
 }
 .footer-col__title {
   font-weight: 500;
