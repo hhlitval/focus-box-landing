@@ -1,4 +1,10 @@
 .cta {
   display: flex;
   column-gap: 2rem;
+
+  &.nav__cta {
+    @include mobile-nav() {
+      display: none;
+    }
+  }
 }
