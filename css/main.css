@@ -154,6 +154,11 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
 }
+@media (width <= 1024px) {
+  .nav {
+    padding-inline: clamp(2rem, 0.637rem + 4.26vw, 5rem);
+  }
+}
 .nav__logo {
   font-size: 2.4rem;
   width: 33%;
@@ -216,6 +221,19 @@ body {
   .nav-burger > span:nth-child(2) {
     width: 67%;
   }
+}
+.nav.mobile .nav-burger > *:first-child {
+  -webkit-transform: rotate(45deg) translate3d(0px, 0px, 0px);
+          transform: rotate(45deg) translate3d(0px, 0px, 0px);
+}
+.nav.mobile .nav-burger > *:nth-child(2) {
+  opacity: 0;
+  width: 0rem;
+}
+.nav.mobile .nav-burger > *:last-child {
+  width: 100%;
+  -webkit-transform: rotate(-45deg) translate3d(0px, 0px, 0px);
+          transform: rotate(-45deg) translate3d(0px, 0px, 0px);
 }
 
 .hero {

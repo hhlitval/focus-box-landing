@@ -8,6 +8,10 @@
   font-size: 1.6rem;
   font-weight: 500;
 
+  @include mobile-nav() {
+    padding-inline: clamp(2rem, 0.637rem + 4.26vw, 5rem);
+  }
+
   &__logo {
     font-size: 2.4rem;
     width: 33%;
@@ -56,6 +60,22 @@
         &:nth-child(2) {
           width: 67%;
         }
+      }
+    }
+  }
+
+  &.mobile {
+    .nav-burger > * {
+      &:first-child {
+        transform: rotate(45deg) translate3d(0px, 0px, 0px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        width: 0rem;
+      }
+      &:last-child {
+        width: 100%;
+        transform: rotate(-45deg) translate3d(0px, 0px, 0px);
       }
     }
   }
