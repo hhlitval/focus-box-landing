@@ -1,11 +1,5 @@
 @mixin mobile-nav() {
-  @media (width <= 1024px) {
-    @content;
-  }
-}
-
-@mixin tablet() {
-  @media (width <= 974px) {
+  @media (width <= 977px) {
     @content;
   }
 }

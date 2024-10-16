@@ -12,17 +12,23 @@
     padding-inline: clamp(2rem, 0.637rem + 4.26vw, 5rem);
   }
 
-  &__logo {
+  &-logo {
+    display: flex;
+    width: 22rem;
+    gap: 0.7rem;
+    align-items: center;
     font-size: 2.4rem;
-    width: 33%;
+
+    &__img {
+      height: 2.4rem;
+    }
   }
 
   &__list {
     display: flex;
-    width: 33%;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: clamp(0rem, -11.637rem + 11.36vw, 2rem);
 
     @include mobile-nav() {
       display: none;
@@ -34,7 +40,7 @@
   }
 
   &__cta {
-    margin-left: auto;
+    width: 22rem;
   }
 
   &-burger {

@@ -8,7 +8,7 @@
     width: 100%;
     margin: 0 auto;
 
-    @include tablet() {
+    @include mobile-nav() {
       grid-template-columns: 1fr 1fr;
       column-gap: 2rem;
       row-gap: 2.4rem;

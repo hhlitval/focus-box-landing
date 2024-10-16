@@ -1,6 +1,6 @@
 .cta {
   display: flex;
-  column-gap: 2rem;
+  column-gap: clamp(0rem, -11.637rem + 11.36vw, 2rem);
 
   &.nav__cta {
     @include mobile-nav() {
