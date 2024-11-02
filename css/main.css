@@ -258,12 +258,13 @@ body {
   color: #fff;
 }
 .nav.mobile .nav-burger > *:first-child {
+  width: 100%;
   -webkit-transform: rotate(45deg) translate3d(0px, 0px, 0px);
           transform: rotate(45deg) translate3d(0px, 0px, 0px);
 }
 .nav.mobile .nav-burger > *:nth-child(2) {
   opacity: 0;
-  width: 0rem;
+  width: 0px;
 }
 .nav.mobile .nav-burger > *:last-child {
   width: 100%;
@@ -280,6 +281,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .hero__content {
   display: -webkit-box;
@@ -309,19 +311,21 @@ body {
   line-height: 1.5;
   margin-bottom: clamp(3.6rem, 3.0912rem + 1.59vw, 5rem);
 }
-
-.product {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.hero__img {
+  position: relative;
+  z-index: 0;
 }
-.product__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-}
-.product__col {
-  height: 40rem;
-  background-color: #1e1e24;
-  border-radius: 1.6rem;
+.hero__img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(8, 9, 10)), color-stop(19%, rgba(8, 9, 10, 0.738)), color-stop(34%, rgba(8, 9, 10, 0.541)), color-stop(47%, rgba(8, 9, 10, 0.382)), color-stop(56.5%, rgba(8, 9, 10, 0.278)), color-stop(65%, rgba(8, 9, 10, 0.194)), color-stop(73%, rgba(8, 9, 10, 0.126)), color-stop(80.2%, rgba(8, 9, 10, 0.075)), color-stop(86.1%, rgba(8, 9, 10, 0.042)), color-stop(91%, rgba(8, 9, 10, 0.021)), color-stop(95.2%, rgba(8, 9, 10, 0.008)), color-stop(98.2%, rgba(8, 9, 10, 0.002)), to(transparent));
+  background: linear-gradient(to top, rgb(8, 9, 10) 0%, rgba(8, 9, 10, 0.738) 19%, rgba(8, 9, 10, 0.541) 34%, rgba(8, 9, 10, 0.382) 47%, rgba(8, 9, 10, 0.278) 56.5%, rgba(8, 9, 10, 0.194) 65%, rgba(8, 9, 10, 0.126) 73%, rgba(8, 9, 10, 0.075) 80.2%, rgba(8, 9, 10, 0.042) 86.1%, rgba(8, 9, 10, 0.021) 91%, rgba(8, 9, 10, 0.008) 95.2%, rgba(8, 9, 10, 0.002) 98.2%, transparent 100%);
 }
 
 .features {

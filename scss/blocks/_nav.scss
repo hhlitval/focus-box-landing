@@ -100,11 +100,12 @@
 
     .nav-burger > * {
       &:first-child {
+        width: 100%;
         transform: rotate(45deg) translate3d(0px, 0px, 0px);
       }
       &:nth-child(2) {
         opacity: 0;
-        width: 0rem;
+        width: 0px;
       }
       &:last-child {
         width: 100%;
