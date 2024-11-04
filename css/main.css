@@ -323,7 +323,7 @@ body {
   bottom: 0;
   z-index: 1;
   width: 100%;
-  height: 70%;
+  height: 50%;
   position: absolute;
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(8, 9, 10)), color-stop(19%, rgba(8, 9, 10, 0.738)), color-stop(34%, rgba(8, 9, 10, 0.541)), color-stop(47%, rgba(8, 9, 10, 0.382)), color-stop(56.5%, rgba(8, 9, 10, 0.278)), color-stop(65%, rgba(8, 9, 10, 0.194)), color-stop(73%, rgba(8, 9, 10, 0.126)), color-stop(80.2%, rgba(8, 9, 10, 0.075)), color-stop(86.1%, rgba(8, 9, 10, 0.042)), color-stop(91%, rgba(8, 9, 10, 0.021)), color-stop(95.2%, rgba(8, 9, 10, 0.008)), color-stop(98.2%, rgba(8, 9, 10, 0.002)), to(transparent));
   background: linear-gradient(to top, rgb(8, 9, 10) 0%, rgba(8, 9, 10, 0.738) 19%, rgba(8, 9, 10, 0.541) 34%, rgba(8, 9, 10, 0.382) 47%, rgba(8, 9, 10, 0.278) 56.5%, rgba(8, 9, 10, 0.194) 65%, rgba(8, 9, 10, 0.126) 73%, rgba(8, 9, 10, 0.075) 80.2%, rgba(8, 9, 10, 0.042) 86.1%, rgba(8, 9, 10, 0.021) 91%, rgba(8, 9, 10, 0.008) 95.2%, rgba(8, 9, 10, 0.002) 98.2%, transparent 100%);
@@ -333,7 +333,7 @@ body {
   padding-block: clamp(10rem, 9.272rem + 2.27vw, 12rem);
   position: relative;
 }
-.features__row {
+.features-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,11 +343,47 @@ body {
           flex-direction: column;
   gap: clamp(3rem, 2.23rem + 2.27vw, 5rem);
 }
-.features__item {
-  height: 36rem;
+.features-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1e1e24;
   border-radius: 1.6rem;
   overflow: hidden;
+}
+.features-item--reversed {
+  direction: rtl;
+}
+.features-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.4rem 4.8rem;
+  line-height: 1.7;
+}
+.features-item__title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.features-item__description {
+  color: #b2b2b2;
+}
+.features-item__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  height: 350px;
 }
 
 .pricing {

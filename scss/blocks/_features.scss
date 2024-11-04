@@ -2,20 +2,41 @@
   padding-block: clamp(10rem, 9.272rem + 2.27vw, 12rem);
   position: relative;
 
-  &__row {
+  &-wrapper {
     display: flex;
     flex-direction: column;
     gap: clamp(3rem, 2.23rem + 2.27vw, 5rem);
-
-    // @include small-device() {
-    //   gap: 3rem;
-    // }
   }
 
-  &__item {
-    height: 36rem;
+  &-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     background-color: $secondary-bg-color;
     border-radius: 1.6rem;
     overflow: hidden;
+    &--reversed {
+      direction: rtl;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 2.4rem 4.8rem;
+      line-height: 1.7;
+    }
+    &__title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 1.4rem;
+    }
+    &__description {
+      color: $text-color-muted;
+    }
+    &__img {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      height: 350px;
+    }
   }
 }
