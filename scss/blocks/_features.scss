@@ -12,11 +12,29 @@
     display: grid;
     min-height: 350px;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     align-items: center;
     background-color: $secondary-bg-color;
     border-radius: 1.6rem;
     overflow: hidden;
+    &--reversed {
+      .features-item__content {
+        order: 1;
+      }
+      .features-item__img {
+        order: -1;
+      }
+      @include small-device() {
+        .features-item__content,
+        .features-item__img {
+          order: initial;
+        }
+      }
+    }
+
+    @include small-device() {
+      grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+    }
     @include mobile() {
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
