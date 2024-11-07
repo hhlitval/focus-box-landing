@@ -10,33 +10,44 @@
 
   &-item {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    min-height: 350px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     align-items: center;
     background-color: $secondary-bg-color;
     border-radius: 1.6rem;
     overflow: hidden;
-    &--reversed {
-      direction: rtl;
+    @include mobile() {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+
     &__content {
       display: flex;
       flex-direction: column;
       padding: 2.4rem 4.8rem;
       line-height: 1.7;
+      @include small-device() {
+        padding: 2.4rem;
+      }
     }
     &__title {
-      font-size: 2rem;
+      font-size: clamp(1.8rem, 1.73rem + 0.23vw, 2rem);
       font-weight: 500;
       margin-bottom: 1.4rem;
     }
     &__description {
+      font-size: clamp(1.4rem, 1.33rem + 0.23vw, 1.6rem);
       color: $text-color-muted;
     }
     &__img {
       display: flex;
       align-items: center;
       margin: 0 auto;
-      height: 350px;
+      padding: 1rem;
+      img {
+        max-height: 300px;
+        width: auto;
+      }
     }
   }
 }
