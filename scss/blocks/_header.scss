@@ -1,9 +1,26 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 10rem;
   background-color: transparent;
-  z-index: 1;
+
+  &-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #08090aca;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.1);
+    backdrop-filter: blur(2rem);
+    animation: slideDown 0.4s ease-in-out;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      visibility: visible;
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 }

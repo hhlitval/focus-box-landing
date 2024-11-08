@@ -15,6 +15,17 @@ body {
   color: $text-color;
 }
 
+.wrapper {
+  background-image: url("/img/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  &.sticky {
+    margin-top: 10rem;
+  }
+}
+
 .hidden {
   display: none;
 }

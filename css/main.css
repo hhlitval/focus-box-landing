@@ -124,18 +124,58 @@ body {
   color: #fff;
 }
 
+.wrapper {
+  background-image: url("/img/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.wrapper.sticky {
+  margin-top: 10rem;
+}
+
 .hidden {
   display: none;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 10rem;
   background-color: transparent;
-  z-index: 1;
+}
+.header-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(8, 9, 10, 0.7921568627);
+  border-bottom: 1px solid rgba(148, 148, 148, 0.1);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  -webkit-animation: slideDown 0.4s ease-in-out;
+          animation: slideDown 0.4s ease-in-out;
+}
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .nav {
@@ -234,12 +274,14 @@ body {
     width: 67%;
   }
 }
+.nav.mobile {
+  font-size: 2.6rem;
+}
 .nav.mobile .nav__list {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
+  height: 100vh;
+  width: 100vw;
   background-color: #1e1e24;
   z-index: 1;
   padding: 0 3.2rem;
@@ -277,11 +319,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   place-items: center;
-  background-image: url("/img/hero-bg.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .hero__content {
   display: -webkit-box;
@@ -315,16 +352,6 @@ body {
   margin-top: clamp(3.6rem, 3.0912rem + 1.59vw, 5rem);
   position: relative;
   z-index: 0;
-}
-.hero__img::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  width: 100%;
-  height: 30%;
-  position: absolute;
 }
 
 .features {
