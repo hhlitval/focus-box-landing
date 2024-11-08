@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="home">
       <header class="header">
         <nav class="header_nav nav">
           <span class="nav-logo">
@@ -15,14 +15,18 @@
             <span class="nav-logo__name">FocusBox</span></span
           >
           <ul class="nav__list">
-            <li class="nav__item"><a href="#!" class="btn">Home</a></li>
-            <li class="nav__item"><a href="#!" class="btn">Features</a></li>
-            <li class="nav__item"><a href="#!" class="btn">Pricing</a></li>
+            <li class="nav__item"><a href="#home" class="btn">Home</a></li>
+            <li class="nav__item">
+              <a href="#features" class="btn">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="btn">Pricing</a>
+            </li>
             <li class="nav__item"><a href="#!" class="btn">Contact</a></li>
           </ul>
           <div class="cta nav__cta">
             <a href="#!" class="btn">Sign In</a>
-            <a href="#!" class="btn btn--download">Download</a>
+            <a href="#download" class="btn btn--download">Download</a>
           </div>
           <div class="nav-burger">
             <span></span>
@@ -52,7 +56,7 @@
       </section>
     </div>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="section-content">
         <h2 class="section-content__heading">
           Effortless focus. Simple design.
@@ -111,7 +115,7 @@
       </div>
     </section>
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="section-content">
         <h2 class="section-content__heading">
           Free for Basic Focus. <br />
@@ -422,7 +426,7 @@
       </div>
     </section>
 
-    <section class="download">
+    <section class="download" id="download">
       <div class="section-content">
         <h2 class="section-content__heading section-content__heading--xs">
           Download FocusBox

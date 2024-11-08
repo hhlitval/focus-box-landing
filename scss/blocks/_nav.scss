@@ -55,6 +55,7 @@
       width: 5rem;
       gap: 0.5rem;
       z-index: 9;
+      cursor: pointer;
 
       & > span {
         width: 100%;
@@ -81,7 +82,7 @@
       height: 100vh;
       width: 100vw;
       background-color: $secondary-bg-color;
-      z-index: 1;
+      z-index: 3;
       padding: 0 3.2rem;
       margin: 0 auto;
       display: flex;

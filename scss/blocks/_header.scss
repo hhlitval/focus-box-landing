@@ -1,6 +1,7 @@
 .header {
   height: 10rem;
   background-color: transparent;
+  transition: all 0.3s;
 
   &-sticky {
     position: fixed;

@@ -1,3 +1,5 @@
+"use strict";
+
 const burgerMenu = document.querySelector(".nav-burger"),
   nav = document.querySelector(".nav"),
   navList = document.querySelector(".header-nav__list"),
@@ -19,6 +21,21 @@ window.addEventListener("scroll", function () {
   }
 });
 
+//Mobile menu
 burgerMenu.addEventListener("click", () => {
   nav.classList.toggle("mobile");
+  if (nav.classList.contains("mobile")) {
+    document.documentElement.classList.add("no-scroll");
+  } else {
+    document.documentElement.classList.remove("no-scroll");
+  }
+  window.addEventListener("resize", function () {
+    // above 978px
+    if (window.matchMedia("(min-width: 978px)").matches) {
+      if (nav.classList.contains("mobile")) {
+        nav.classList.remove("mobile");
+        document.documentElement.classList.remove("no-scroll");
+      }
+    }
+  });
 });
