@@ -20,8 +20,9 @@
     font-size: 2.4rem;
     z-index: 9;
 
-    &__img {
+    img {
       height: 2.4rem;
+      width: 2.4rem;
     }
   }
 
@@ -82,22 +83,16 @@
       height: 100vh;
       width: 100vw;
       background-color: $secondary-bg-color;
-      z-index: 3;
       padding: 0 3.2rem;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      row-gap: 2.4rem;
       font-weight: 500;
 
       .btn {
         color: $text-color;
       }
     }
-
-    // .cta.nav__cta {
-    //   display: flex;
-    // }
 
     .nav-burger > * {
       &:first-child {

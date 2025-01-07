@@ -8,16 +8,13 @@ const burgerMenu = document.querySelector(".nav-burger"),
 currentYear.textContent = new Date().getFullYear();
 
 window.addEventListener("scroll", function () {
-  const wrapper = document.querySelector(".wrapper"),
-    header = document.querySelector(".header");
-  let triggerHeight = wrapper.offsetHeight - 50;
+  const header = document.querySelector(".header");
+  let triggerHeight = header.offsetHeight - 10;
 
   if (window.scrollY > triggerHeight) {
     header.classList.add("header-sticky");
-    wrapper.classList.add("sticky");
   } else {
     header.classList.remove("header-sticky");
-    wrapper.classList.remove("sticky");
   }
 });
 
