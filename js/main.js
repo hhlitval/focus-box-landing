@@ -10,7 +10,7 @@ currentYear.textContent = new Date().getFullYear();
 window.addEventListener("scroll", function () {
   const wrapper = document.querySelector(".wrapper"),
     header = document.querySelector(".header");
-  let triggerHeight = wrapper.offsetHeight - 100;
+  let triggerHeight = wrapper.offsetHeight - 50;
 
   if (window.scrollY > triggerHeight) {
     header.classList.add("header-sticky");
